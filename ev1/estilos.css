@@ -1,0 +1,83 @@
+/* Configuración general */
+body {
+    background-color: #eaddd5;
+    font-family: Calibri, sans-serif;
+    color: #474747;
+    text-align: center;
+    margin: 0;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto;
+    height: 140px;
+}
+
+/* Descripción */
+.descripcion {
+    font-size: 16px;
+    text-align: justify;
+    margin: 7px auto;
+    width: 60%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* Llamado a la acción */
+.llamado {
+    font-weight: bold;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 7px auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+/* Formulario */
+.formulario {
+    margin: 7px auto;
+    width: 50%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario label {
+    margin-top: 10px;
+}
+
+.formulario input, 
+.formulario select, 
+.formulario button {
+    margin-top: 5px;
+    padding: 5px;
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}

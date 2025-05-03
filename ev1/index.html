@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viajes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="Logo de la Agencia de Viajes" class="logo">
+    </header>
+
+    <section class="descripcion">
+        <p>Bienvenido a nuestra agencia de viajes. Completa el siguiente formulario para conocer tus preferencias y brindarte las mejores opciones para tu próximo destino.</p>
+    </section>
+
+    <section class="llamado">
+        <p><strong>¡Completa el formulario y descubre destinos increíbles!</strong></p>
+    </section>
+
+    <section class="formulario">
+        <form action="procesar-información.php" method="GET">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label>¿Ha viajado en los últimos 6 meses?</label>
+            <input type="radio" id="si" name="viaje_reciente" value="si">
+            <label for="si">Sí</label>
+            <input type="radio" id="no" name="viaje_reciente" value="no">
+            <label for="no">No</label>
+
+            <label for="destinos">De los siguientes destinos, seleccione a cuáles le gustaría visitar:</label>
+            <select id="destinos" name="destinos[]" multiple>
+                <option value="Caribe">Caribe</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Miami">Miami</option>
+                <option value="Talca">Talca</option>
+            </select>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Visítanos en nuestro sitio web: <a href="https://www.sitio-web-a-elección.com" target="_blank">www.sitio-web-a-elección.com</a></p>
+    </footer>
+
+</body>
+</html>
